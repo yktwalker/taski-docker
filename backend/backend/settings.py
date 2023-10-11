@@ -1,6 +1,5 @@
 # Добавьте import
 import os
-
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -74,7 +73,7 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 #         'ENGINE': 'django.db.backends.sqlite3',
 #         'NAME': '/data/db.sqlite3',
 #     }
-# } 
+# }
 
 # Этими строчками замените текущую настройку DATABASES
 DATABASES = {
@@ -89,8 +88,6 @@ DATABASES = {
         'PORT': os.getenv('DB_PORT', 5432)
     }
 }
-
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
